@@ -36,7 +36,6 @@ sip==4.19.8
 six==1.14.0
 sqlparse==0.4.1
 typed-ast==1.4.1
-UNKNOWN==0.0.0
 urllib3==1.26.3
 virtualenv==20.2.2
 wrapt==1.11.2
