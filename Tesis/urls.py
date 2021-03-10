@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from recomendacion.views import Resultado, Post, Precision
+from django.config import settings
+from django.config.urls.static import static
 #from recomendacion.models import Preguntas
 
 urlpatterns = [
@@ -25,4 +27,4 @@ urlpatterns = [
     path('Post', Post, name="Post"),
     path('Pre', Precision, name="Pre"),
     #path('api/v2.0/', include('Preguntas.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

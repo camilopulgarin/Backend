@@ -41,3 +41,4 @@ virtualenv==20.2.2
 wrapt==1.11.2
 xlrd==2.0.1
 zipp==3.4.0
+whitenoise==5.2.0
