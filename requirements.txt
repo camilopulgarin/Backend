@@ -24,7 +24,6 @@ mccabe==0.6.1
 numpy==1.17.2
 openpyxl==3.0.5
 pandas==1.1.5
-paquetefunciones==1.0
 psycopg2==2.8.6
 pygame==1.9.3
 pyHook==1.5.1
