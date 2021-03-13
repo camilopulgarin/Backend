@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from recomendacion.views import Resultado, Post, Precision
+from recomendacion.views import Resultado, Post, Precision, Estadistica
 from django.conf import settings
 from django.conf.urls.static import static
 #from recomendacion.models import Preguntas
@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1.0/', include('recomendacion.urls')),
     path('Resultado', Resultado, name="Resultado"),
+    path('Estadistica', Estadistica, name="Estadistica"),
     path('Post', Post, name="Post"),
     path('Pre', Precision, name="Pre"),
     #path('api/v2.0/', include('Preguntas.urls')),

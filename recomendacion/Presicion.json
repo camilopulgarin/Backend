@@ -7,16 +7,7 @@
             "TotalUser": 9,
             "PonderadoMRR": 0.9259259259259258,
             "PonderadoNDCG": 1.0
-        },
-        "Users": [
-            {
-                "MRR": 0,
-                "NDCG": 0,
-                "LIKE": {
-                    "Like": 0,
-                    "Dislike": 0
-                }
-            }
-        ]
+        }
+        
     }
 ]

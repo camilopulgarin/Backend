@@ -38,6 +38,13 @@ def Resultado(self):
     json.dumps(parsed, indent=4)
     return JsonResponse(parsed)
 
+def Estadistica(self):
+    filename = 'recomendacion/Presicion.json'
+    with open(filename, 'r') as f:
+        data = json.load(f)
+    return JsonResponse(data[0])
+    
+
 @csrf_exempt
 def Post(request):
     print(request.method == "POST")
