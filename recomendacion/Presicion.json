@@ -6,7 +6,9 @@
             "LIKEPromedio": 0,
             "TotalUser": 9,
             "PonderadoMRR": 0.9259259259259258,
-            "PonderadoNDCG": 1.0
+            "PonderadoNDCG": 1.0,
+            "Likes": 0,
+            "Dislikes" : 0
         }
         
     }
