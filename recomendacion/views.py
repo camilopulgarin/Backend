@@ -190,10 +190,12 @@ def likes(request):
     filename = 'recomendacion/Presicion.json'
     with open(filename, 'r') as f:
         data = json.load(f)
-    if(req[calif] == 1):
+    if(req["calif"] == 1):
         data[0]["Total"]["Likes"] = data[0]["Total"]["Likes"] + 1
-    if(req[calif] == 0):
+    if(req["calif"] == 0):
         data[0]["Total"]["Dislikes"] = data[0]["Total"]["Dislikes"] + 1
 
     with open(filename, 'w') as f:
         json.dump(data, f, indent=4)
+    
+    return JsonResponse({"Respuesta": "Exito"})
