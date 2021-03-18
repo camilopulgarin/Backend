@@ -1,12 +1,12 @@
 [
     {
         "Total": {
-            "MRR": 5,
-            "NDCG": 5,
-            "TotalUser": 5,
+            "MRR": 9,
+            "NDCG": 9,
+            "TotalUser": 9,
             "PonderadoMRR": 1,
             "PonderadoNDCG": 1,
-            "Likes": 5,
+            "Likes": 9,
             "Dislikes": 0
         }
     }
