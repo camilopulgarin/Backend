@@ -1,13 +1,12 @@
 [
     {
         "Total": {
-            "MRR": 0,
-            "NDCG": 0,
-            "LIKEPromedio": 0,
-            "TotalUser": 0,
-            "PonderadoMRR": 0,
-            "PonderadoNDCG": 0,
-            "Likes": 0,
+            "MRR": 5,
+            "NDCG": 5,
+            "TotalUser": 5,
+            "PonderadoMRR": 1,
+            "PonderadoNDCG": 1,
+            "Likes": 5,
             "Dislikes": 0
         }
     }
