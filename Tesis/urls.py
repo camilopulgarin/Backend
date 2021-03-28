@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 #from recomendacion.models import Preguntas
 
+#Se definen las rutas de la api
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1.0/', include('recomendacion.urls')),

@@ -7,6 +7,8 @@ class recomendacion(models.Model):
 
 
 #Modelo preguntas
+#Se define este modelo con el fin de almacenar cada una de las preguntas del test.
+#Y sus atributos como enunciado, respuestas y tipo
 class Preguntas(models.Model):
     NumPreg = models.CharField(max_length=50)
     Mecanica = models.IntegerField()

@@ -38,6 +38,9 @@ def Resultado(self):
     json.dumps(parsed, indent=4)
     return JsonResponse(parsed)
 
+
+#Se define un metodo para visualizar la presicion del algoritmo por medio de una
+# Ruta que llama al archivo JSON donde se almacenan los datos 
 def Estadistica(self):
     filename = 'recomendacion/Presicion.json'
     with open(filename, 'r') as f:
@@ -45,6 +48,8 @@ def Estadistica(self):
     return JsonResponse(data[0])
     
 
+#Funcion de tipo post que recibe la calificacion del estudiante y hace una recomendacion 
+# con respecto a la matriz representada en el excel
 @csrf_exempt
 def Post(request):
     print(request.method == "POST")
@@ -107,6 +112,9 @@ def Post(request):
 
     return JsonResponse(parsed)
 
+#Funcion tipo post que compara los items relevantes para y usuario y los items
+# relevantes para el sistema de recomendacion calculando la precision del algoritmo
+# utilizando el metodo MRR y el metodo IDG los cuales se almacenan en un archivo JSON
 @csrf_exempt
 def Precision(request):
     req = JSONParser().parse(request)
@@ -183,7 +191,8 @@ def Precision(request):
         json.dump(data, f, indent=4)
     return JsonResponse({"Respuesta": "Exito"})
 
-
+#Esta funcion se encarga de almacenar los likes y dislikes con los que los usuarios
+# califican la aplicacion almacenandolos en un archivo JSON
 @csrf_exempt
 def likes(request):
     req = JSONParser().parse(request)
